@@ -4,22 +4,38 @@
     "settings": {
         "color": {
             "palette": [
+                { "name": "Background", "slug": "background", "color": "#f9f9f9" },
                 { "name": "Primary", "slug": "primary", "color": "#0057b7" },
                 { "name": "Secondary", "slug": "secondary", "color": "#ffd700" },
-                { "name": "Background", "slug": "background", "color": "#ffffff" },
                 { "name": "Text", "slug": "text", "color": "#333333" }
-            ]
+            ],
+            "background": "#f9f9f9",
+            "text": "#333333"
         },
         "typography": {
+            "fontFamilies": [
+                { "name": "Inter", "slug": "inter", "fontFamily": "'Inter', sans-serif" },
+                { "name": "Serif", "slug": "serif", "fontFamily": "'Georgia', serif" }
+            ],
             "fontSizes": [
                 { "name": "Small", "slug": "small", "size": "14px" },
-                { "name": "Medium", "slug": "medium", "size": "18px" },
+                { "name": "Normal", "slug": "normal", "size": "16px" },
                 { "name": "Large", "slug": "large", "size": "24px" }
             ]
         },
         "layout": {
             "contentSize": "800px",
             "wideSize": "1200px"
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "#f9f9f9",
+            "text": "#333333"
+        },
+        "typography": {
+            "fontSize": "16px",
+            "fontFamily": "'Inter', sans-serif"
         }
     }
 }
