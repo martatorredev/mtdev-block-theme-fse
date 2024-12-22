@@ -4,7 +4,7 @@
     "settings": {
         "color": {
             "palette": [
-                { "name": "Background", "slug": "background", "color": "#00274d" },
+                { "name": "Background", "slug": "background", "color": "#011046" },
                 { "name": "Primary", "slug": "primary", "color": "#0057b7" },
                 { "name": "Secondary", "slug": "secondary", "color": "#ffd700" },
                 { "name": "Text", "slug": "text", "color": "#ffffff" }
@@ -27,7 +27,7 @@
     },
     "styles": {
         "color": {
-            "background": "#00274d",
+            "background": "#011046",
             "text": "#ffffff"
         },
         "typography": {
