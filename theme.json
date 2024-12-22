@@ -4,18 +4,15 @@
     "settings": {
         "color": {
             "palette": [
-                { "name": "Background", "slug": "background", "color": "#f9f9f9" },
+                { "name": "Background", "slug": "background", "color": "#00274d" },
                 { "name": "Primary", "slug": "primary", "color": "#0057b7" },
                 { "name": "Secondary", "slug": "secondary", "color": "#ffd700" },
-                { "name": "Text", "slug": "text", "color": "#333333" }
-            ],
-            "background": "#f9f9f9",
-            "text": "#333333"
+                { "name": "Text", "slug": "text", "color": "#ffffff" }
+            ]
         },
         "typography": {
             "fontFamilies": [
-                { "name": "Inter", "slug": "inter", "fontFamily": "'Inter', sans-serif" },
-                { "name": "Serif", "slug": "serif", "fontFamily": "'Georgia', serif" }
+                { "name": "Inter", "slug": "inter", "fontFamily": "'Inter', sans-serif" }
             ],
             "fontSizes": [
                 { "name": "Small", "slug": "small", "size": "14px" },
@@ -30,8 +27,46 @@
     },
     "styles": {
         "color": {
-            "background": "#f9f9f9",
-            "text": "#333333"
+            "background": "#00274d",
+            "text": "#ffffff"
+        },
+        "typography": {
+            "fontSize": "16px",
+            "fontFamily": "'Inter', sans-serif"
+        }
+    }
+}
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                { "name": "Background", "slug": "background", "color": "#00274d" },
+                { "name": "Primary", "slug": "primary", "color": "#0057b7" },
+                { "name": "Secondary", "slug": "secondary", "color": "#ffd700" },
+                { "name": "Text", "slug": "text", "color": "#ffffff" }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                { "name": "Inter", "slug": "inter", "fontFamily": "'Inter', sans-serif" }
+            ],
+            "fontSizes": [
+                { "name": "Small", "slug": "small", "size": "14px" },
+                { "name": "Normal", "slug": "normal", "size": "16px" },
+                { "name": "Large", "slug": "large", "size": "24px" }
+            ]
+        },
+        "layout": {
+            "contentSize": "800px",
+            "wideSize": "1200px"
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "#00274d",
+            "text": "#ffffff"
         },
         "typography": {
             "fontSize": "16px",
