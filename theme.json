@@ -12,7 +12,8 @@
         },
         "typography": {
             "fontFamilies": [
-                { "name": "IBM Plex Sans", "slug": "ibm-plex-sans", "fontFamily": "'IBM Plex Sans', sans-serif" }
+                { "name": "Space Grotesk", "slug": "space-grotesk", "fontFamily": "'Space Grotesk', sans-serif" },
+                { "name": "Red Hat Display", "slug": "red-hat-display", "fontFamily": "'Red Hat Display', sans-serif" }
             ],
             "fontSizes": [
                 { "name": "Small", "slug": "small", "size": "14px" },
@@ -31,8 +32,13 @@
             "text": "#ffffff"
         },
         "typography": {
-            "fontSize": "16px",
-            "fontFamily": "'IBM Plex Sans', sans-serif"
+            "fontFamily": "var(--wp--preset--font-family--red-hat-display)", /* Default font for body */
+            "elements": {
+                "h1, h2, h3, h4, h5, h6": {
+                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)" /* Titles use Space Grotesk */
+                }
+            }
         }
     }
 }
+
