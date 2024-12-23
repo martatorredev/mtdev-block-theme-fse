@@ -12,7 +12,7 @@
         },
         "typography": {
             "fontFamilies": [
-                { "name": "Inter", "slug": "inter", "fontFamily": "'Inter', sans-serif" }
+                { "name": "IBM Plex Sans", "slug": "ibm-plex-sans", "fontFamily": "'IBM Plex Sans', sans-serif" }
             ],
             "fontSizes": [
                 { "name": "Small", "slug": "small", "size": "14px" },
@@ -32,7 +32,7 @@
         },
         "typography": {
             "fontSize": "16px",
-            "fontFamily": "'Inter', sans-serif"
+            "fontFamily": "'IBM Plex Sans', sans-serif"
         }
     }
 }
