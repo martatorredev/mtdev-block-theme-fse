@@ -1,6 +1,21 @@
-<!-- wp:group {"tagName":"header","align":"full","layout":{"type":"flex","justifyContent":"space-between"}} -->
-<header class="wp-block-group alignfull">
-    <!-- wp:site-title /-->
-    <!-- wp:navigation {"layout":{"type":"flex","justifyContent":"right"}} /-->
-</header>
+<!-- wp:group {"align":"full","backgroundColor":"accent","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignfull has-accent-background-color has-background">
+    <!-- Isotipo -->
+    <!-- wp:image {"id":1,"width":50,"height":50,"sizeSlug":"full","linkDestination":"none"} -->
+    <figure class="wp-block-image size-full is-resized" style="margin-left: 20px;">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/isotipo.png" alt="Isotipo" width="50" height="50"/> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/isotipo.png" alt="Isotipo" width="50" height="50"/>
+    </figure>
+    <!-- /wp:image -->
+
+    <!-- Menú -->
+    <!-- wp:navigation {"orientation":"horizontal","layout":{"type":"flex","justifyContent":"flex-end"}} -->
+    <nav class="wp-block-navigation">
+        <!-- wp:navigation-link {"label":"Services","url":"#services"} /-->
+        <!-- wp:navigation-link {"label":"About Me","url":"#about"} /-->
+        <!-- wp:navigation-link {"label":"Portfolio","url":"#portfolio"} /-->
+        <!-- wp:navigation-link {"label":"Blog","url":"#blog"} /-->
+        <!-- wp:navigation-link {"label":"Contact","url":"#contact"} /-->
+    </nav>
+    <!-- /wp:navigation -->
+</div>
 <!-- /wp:group -->
