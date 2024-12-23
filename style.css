@@ -1,7 +1,7 @@
 /*
 Theme Name: MTDev Block Theme FSE
-Description: A clean theme with a dark blue background and accessible design.
-Version: 1.0
+Description: A modern theme with Space Grotesk for titles and Red Hat Display for body text.
+Version: 1.1
 Author: Marta Torre
 Author URI: https://martatorre.dev
 Text Domain: mtdev-block-theme-fse
@@ -9,17 +9,18 @@ Text Domain: mtdev-block-theme-fse
 
 /* General Styles */
 body {
-    background-color: #00274d; /* Azul oscuro */
-    color: #ffffff; /* Texto blanco */
-    font-family: 'Inter', sans-serif;
+    background-color: #011046; /* Dark blue background */
+    color: #ffffff; /* White text */
+    font-family: 'Red Hat Display', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #ffd700; /* Amarillo para encabezados */
-    line-height: 1.4;
+    color: #28E8A3; /* Accent color */
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 1.5rem;
 }
 h1 {
     font-size: 3rem;
@@ -32,10 +33,20 @@ h2 {
     text-align: center;
 }
 
+/* Links */
+a {
+    color: #28E8A3; /* Accent color */
+    text-decoration: none;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 /* Buttons */
 .wp-block-button__link {
-    background-color: #ffd700; /* Amarillo */
-    color: #00274d; /* Texto oscuro */
+    background-color: #28E8A3; /* Accent color */
+    color: #011046; /* Dark blue text */
     padding: 0.8rem 1.5rem;
     border-radius: 8px;
     font-weight: bold;
@@ -43,54 +54,101 @@ h2 {
     text-transform: uppercase;
 }
 .wp-block-button__link:hover {
-    background-color: #ffffff; /* Blanco */
-    color: #0057b7; /* Azul */
+    background-color: #ffffff; /* White background on hover */
+    color: #011046;
 }
-/*
-Theme Name: MTDev Block Theme FSE
-Description: A clean theme with a dark blue background and accessible design.
-Version: 1.0
-Author: Marta Torre
-Author URI: https://martatorre.dev
-Text Domain: mtdev-block-theme-fse
-*/
 
-/* General Styles */
-body {
-    background-color: #00274d; /* Azul oscuro */
-    color: #ffffff; /* Texto blanco */
-    font-family: 'Inter', sans-serif;
+/* Containers */
+.wp-block-group {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #011046; /* Dark blue for sections */
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+.wp-block-group.alignfull {
+    width: 100%;
+    padding: 3rem 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #011046; /* Dark blue */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+}
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Navigation */
+.wp-block-navigation {
+    display: flex; /* Aligns items horizontally */
+    justify-content: flex-end; /* Aligns items completely to the right */
+    align-items: center; /* Centers items vertically */
+    height: 99px; /* Keeps the correct height for the menu */
+    gap: 20px; /* Space between items */
+    list-style: none; /* Removes bullets */
     margin: 0;
     padding: 0;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    color: #ffd700; /* Amarillo para encabezados */
-    line-height: 1.4;
-}
-h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-}
-h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
+.wp-block-navigation ul {
+    display: flex; /* Aligns list items horizontally */
+    gap: 20px; /* Space between items */
+    list-style: none; /* Removes bullets */
+    margin: 0;
+    padding: 0;
 }
 
-/* Buttons */
-.wp-block-button__link {
-    background-color: #ffd700; /* Amarillo */
-    color: #00274d; /* Texto oscuro */
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+.wp-block-navigation li {
+    display: inline; /* Ensures list items are inline */
 }
-.wp-block-button__link:hover {
-    background-color: #ffffff; /* Blanco */
-    color: #0057b7; /* Azul */
+
+/* Navigation links */
+.wp-block-navigation a {
+    color: #011046; /* Matches the site's background color */
+    text-decoration: none;
+    font-size: 1.125rem; /* Font size (18px) */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Medium weight */
+    line-height: 1.2; /* Line height */
+    text-transform: uppercase; /* Uppercase text */
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wp-block-navigation a:hover {
+    background-color: #28E8A3; /* Accent green */
+    color: #ffffff; /* White text on hover */
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #011046;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+footer a {
+    color: #28E8A3; /* Accent color */
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+.wp-block-image img {
+    max-height: 50px;
+    width: auto;
+    margin: 0;
 }

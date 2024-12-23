@@ -6,7 +6,7 @@
             "palette": [
                 { "name": "Background", "slug": "background", "color": "#011046" },
                 { "name": "Primary", "slug": "primary", "color": "#0057b7" },
-                { "name": "Secondary", "slug": "secondary", "color": "#ffd700" },
+                { "name": "Accent", "slug": "accent", "color": "#28E8A3" },
                 { "name": "Text", "slug": "text", "color": "#ffffff" }
             ]
         },
@@ -32,13 +32,14 @@
             "text": "#ffffff"
         },
         "typography": {
-            "fontFamily": "var(--wp--preset--font-family--red-hat-display)", /* Default font for body */
+            "fontFamily": "var(--wp--preset--font-family--red-hat-display)",
             "elements": {
                 "h1, h2, h3, h4, h5, h6": {
-                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)" /* Titles use Space Grotesk */
+                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)"
                 }
             }
         }
     }
 }
+
 
